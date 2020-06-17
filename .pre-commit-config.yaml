@@ -1,0 +1,16 @@
+- id: cargo-nightly-format
+  name: Run Cargo FMT in nightly mode
+  language: rust
+  pass_filenames: false
+  types: [rust]
+  entry: cargo
+  args:
+    - "+nightly"
+    - fmt
+- id: cargo-format
+  name: Run Cargo FMT
+  language: rust
+  pass_filenames: false
+  types: [rust]
+  entry: cargo
+  args: [fmt]
